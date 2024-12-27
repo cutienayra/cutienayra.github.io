@@ -11,8 +11,7 @@ body {
 margin: 0px;
 font-family: var(--file-nayra-font);
 overflow: hidden;
-/* background: center / cover no-repeat url(../img/bg.png); */
-background: #b18cfe!important;
+background: center / cover no-repeat url(../img/bg.png);
 }
 
 @font-face {
