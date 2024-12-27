@@ -16,17 +16,17 @@ background: center / cover no-repeat url();
 
 @font-face {
     font-family: "Segoe UI";
-    src: url() format("truetype");
+    src: url(../fonts/segoeui.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Segoe UI Light";
-    src: url() format("truetype");
+    src: url(../fonts/segoeuil.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Segoe UI Bold";
-    src: url() format("truetype");
+    src: url(../fonts/segoeuib.ttf) format("truetype");
 }
 
 div.menu {
