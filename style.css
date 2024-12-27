@@ -196,6 +196,9 @@ titl-2 > shorturls > ul > li > a > i {
 titl-2 > shorturls > ul > li > a > i.fa-youtube {
   color: red;
 }
+titl-2 > shorturls > ul > li > a > i.fa-bluesky {
+  color: rgb(0, 100, 255);
+}
 
 titl-2 > shorturls > ul > li > a > a-text {
   font-family: "Segoe UI Light";
