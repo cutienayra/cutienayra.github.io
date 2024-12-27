@@ -182,15 +182,15 @@ titl>div>a:active{
 color: rgb(120, 120, 120);
 }
 
-titl > div > a[href="https://www.youtube.com/@cutienayraEDM"][title="Redirect to NayraArchives*"] {
+titl > div > a[href="https://www.youtube.com/@cutienayraEDM"] {
   color: rgb(60, 60, 60);
 }
 
-titl > div > a[href="https://www.youtube.com/@cutienayraEDM"][title="Redirect to NayraArchives*"]:hover {
+titl > div > a[href="https://www.youtube.com/@cutienayraEDM"]:hover {
   color: rgb(120, 120, 120);
 }
 
-titl > div > a[href="https://www.youtube.com/@cutienayraEDM"][title="Redirect to NayraArchives*"]:active {
+titl > div > a[href="https://www.youtube.com/@cutienayraEDM"]:active {
   color: rgb(180, 180, 180);
 }
 
