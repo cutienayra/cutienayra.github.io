@@ -1,0 +1,205 @@
+/* CSS */
+
+:root {
+  --file-nayra-font: "Segoe UI", Segoe UI Light, Segoe UI Bold;
+  --file-nayra-hr: solid 0.75px #000;
+}
+
+/* Body CSS */
+
+body {
+margin: 0px;
+font-family: var(--file-nayra-font);
+overflow: hidden;
+background: center / cover no-repeat url();
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url() format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url() format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url() format("truetype");
+}
+
+div.menu {
+    width: 90%;
+    height: 90%;
+    border: solid 0.5px rgb(0 0 0 / 40%);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-top: 2.5px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background: rgb(255 255 255 / 40%);
+    overflow-y: auto;
+    overflow-x: hidden;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -o-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -ms-backdrop-filter: blur(4px);
+    -apple-backdrop-filter: blur(4px);
+}
+
+h1 {
+font-weight: 400;
+color: black;
+}
+
+pre {
+font-weight: normal;
+color: black;
+font-family: var(--file-nayra-font);
+margin: 1em 0px;
+}
+
+hr {
+border: hidden;
+background: hidden;
+display: block;
+border-top: var(--file-nayra-hr);
+}
+
+.fa-icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display,inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  font-family: "Font Awesome 6 Pro";
+}
+
+.fa-icon-thin {
+font-weight: 300;
+}
+.fa-icon-normal {
+font-weight: 450;
+}
+.fa-icon-thick {
+font-weight: 500;
+}
+.fa-icon-solid {
+font-weight: 600;
+}
+
+titl {
+    margin: 0px;
+    border-bottom: solid 0.5px black;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    height: 185px;
+    justify-content: center;
+}
+
+titl>h1 {
+    margin: 0;
+    font-family: Segoe UI Light;
+    font-size: 62px;
+}
+
+titl>div {
+    margin-top: 95.5px;
+    font-size: 22px;
+    margin-left: auto;
+    vertical-align: middle;
+    margin-right: auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+titl>small {
+    font-size: 16px;
+}
+
+dot:before {
+    content: '•';
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+titl>div>a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+titl>div>a>i {
+    width: 68px;
+    height: 68px;
+    font-size: 68px;
+    display: flex!important;
+    margin: auto!important;
+}
+@media (min-width: 1024px) {
+    titl {
+      height: 89px!important;
+      justify-content: left!important;
+    }
+    titl>div {
+      margin-top: 45.5px!important;
+    }
+    titl>div>a>i {
+        width: 28px;
+        height: 28px;
+        font-size: 28px;
+    }
+    titl>div>dot {
+        font-size: 20px!important;
+        margin: 0px!important;
+    }
+    titl>h1 {
+        font-size: 22px!important;
+    }
+}
+
+titl>div>a:hover{
+color: #6e6e6e;
+}
+
+titl>div>a:active{
+color: #aeaeae;
+}
+
+titl>div>a[disabled=''] {
+    color: #b9b9b9;
+    cursor: not-allowed;
+}
+
+h0 {
+    font-size: 44px;
+    display: block;
+    font-family: Segoe Ui Light;
+}
+
+h0>small {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    font-family: Segoe UI;
+}
+
+titl>div>dot {
+  font-size: 28px;
+  margin: 0px 10px 0px 10px;
+}
+titl>div>dot:before {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
