@@ -29,6 +29,10 @@ background: center / cover no-repeat url();
     src: url(../fonts/segoeuib.ttf) format("truetype");
 }
 
+b {
+font-family: "Segoe UI Bold"!important;
+}
+
 div.menu {
     width: 90%;
     height: 90%;
