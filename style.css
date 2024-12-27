@@ -152,11 +152,10 @@ titl-2 {
 
 titl-2>shorturls {
   justify-content: left;
-  transform: translate(0%, 50%);
   display: inline-flex;
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 50%;
+  height: 100%;
 }
 
 titl-2>shorturls>ul>li {
