@@ -186,7 +186,7 @@ titl-2 > shorturls > ul > li > a > i {
   transform: translate(0%, 20%);
   height: 100%;
   min-height: 100%;
-  color: black;
+  color: white;
   font-size: 49;
   margin-right: 10px;
 }
@@ -211,5 +211,5 @@ sep {
 titl-2 > shorturls > ul > li > a > a-text > h1,
 titl-2 > shorturls > ul > li > a > a-text > p {
   margin: 0px 0px 0px 0px;
-  color: black;
+  color: white;
 }
