@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      v1.2A
+// @version      v1.2A2
 // @description  Making the best out of RemovedEDM :3
 // @author       Nayra* - Lilac Pillow
 // @match        https://removededm.com/*
@@ -15,7 +15,8 @@
     h1.home-header__title > span#RemovedEDM,
     .citizen-preferences,
     a[title="Random page"],
-    div.home-header>a[href="/Special:Search"] {
+    div.home-header>a[href="/Special:Search"],
+    div.mw-cookiewarning-container {
   display: none!important;
 }
 h1.home-header__title::before {
