@@ -2,6 +2,7 @@
 // @name         RemovedEDM Tweaker~
 // @version      v1.2A
 // @description  Making the best out of RemovedEDM :3
+// @author       Nayra* - Lilac Pillow
 // @match        https://removededm.com/*
 // @match        https://www.removededm.com/*
 // @grant        GM_addStyle
