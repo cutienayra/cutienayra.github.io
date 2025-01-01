@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      v1.2A2
+// @version      v1.2002
 // @description  Making the best out of RemovedEDM :3
 // @author       Nayra* - Lilac Pillow
 // @match        https://removededm.com/*
 // @match        https://www.removededm.com/*
+// @run-at       document-start
 // @grant        GM_addStyle
 // ==/UserScript==
 
