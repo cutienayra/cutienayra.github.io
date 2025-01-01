@@ -1,0 +1,48 @@
+// ==UserScript==
+// @name         FurAffinity Tweaker~
+// @version      v1.1A
+// @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
+// @author       Nayra* - Lilac Pillow // SoftyBnuny
+// @match        https://www.furaffinity.net/*
+// @match        https://furaffinity.net/*
+// @grant        GM_addStyle
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+if (window.location.pathname == '/') {
+GM_addStyle ( `
+.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, section.gallery-section, .leaderboardAd, .sidebarAds, [href="/browse/"], .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
+  display: none !important;
+}
+#header.has-adminmessage {
+  height: 50px!important;
+  padding: 0px!important;
+  margin: 0px!important;
+}
+` );
+window.location.href = "../browse";
+}
+
+else if (window.location.pathname == '/browse') {
+GM_addStyle ( `
+.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, .leaderboardAd, .sidebarAds, [href="/browse/"], .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
+  display: none !important;
+}
+#header.has-adminmessage {
+  height: 50px!important;
+  padding: 0px!important;
+  margin: 0px!important;
+}
+` );
+}
+
+else {
+GM_addStyle ( `
+.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, .leaderboardAd, .sidebarAds, [href="/browse/"], .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
+  display: none !important;
+}
+` );
+}
+})();
