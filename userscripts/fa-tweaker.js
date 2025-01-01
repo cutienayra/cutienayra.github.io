@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         FurAffinity Tweaker~
-// @version      v1.1001
+// @version      v1.1001B
 // @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
-// @author       Nayra* - Lilac Pillow // SoftyBnuny
+// @author       Nayra* & SoftyBnuny
 // @match        https://www.furaffinity.net/*
 // @match        https://furaffinity.net/*
 // @run-at       document-start
