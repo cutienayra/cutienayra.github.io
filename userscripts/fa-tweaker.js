@@ -12,9 +12,9 @@
 (function() {
     'use strict';
 
-/* if (window.location.pathname == '/') {
+if (window.location.pathname == '/') {
 GM_addStyle ( `
-.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, section.gallery-section, .leaderboardAd, .sidebarAds, [href="/browse/"], .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
+.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, .leaderboardAd, .sidebarAds, [href="/browse/"], .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
   display: none !important;
 }
 #header.has-adminmessage {
@@ -23,11 +23,10 @@ GM_addStyle ( `
   margin: 0px!important;
 }
 ` );
-window.location.href = "../browse";
 }
 */
 
-/* else */ if (window.location.pathname == '/browse') {
+else if (window.location.pathname.indexOf == '/browse') {
 GM_addStyle ( `
 .news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, .leaderboardAd, .sidebarAds, [href="/browse/"], .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
   display: none !important;
