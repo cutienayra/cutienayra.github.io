@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity Tweaker~
-// @version      v1.25
+// @version      v1.275
 // @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
 // @author       Nayra* & SoftyBnuny
 // @match        https://www.furaffinity.net/*
@@ -14,7 +14,7 @@
 
 if (window.location.pathname == '/') {
 GM_addStyle ( `
-.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, .leaderboardAd, .sidebarAds, .lileft[tabindex="0"], .lileft>.top-heading[href="#"] {
+.news-block, [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"], [title="Shop"], div#footer, site-banner, .leaderboardAd, .sidebarAds, .lileft[tabindex="0"], .lileft>.top-heading[href="#"], section.gallery-section:nth-child(3), section.gallery-section:nth-child(4), section.gallery-section:nth-child(5) {
   display: none !important;
 }
 #header.has-adminmessage {
