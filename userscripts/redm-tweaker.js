@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      v1.25
+// @version      v1.3
 // @description  Making the best out of RemovedEDM :3
 // @author       Nayra* - Lilac Pillow
 // @match        https://removededm.com/*
