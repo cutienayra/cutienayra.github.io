@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      v2
+// @version      2.04
 // @description  Making the best out of RemovedEDM :3
 // @author       Nayra* - Lilac Pillow
 // @match        https://removededm.com/*
@@ -107,7 +107,10 @@ article#tabber-tabpanel-Overview-0.tabber__panel > center,
 article#tabber-tabpanel-Videos-0.tabber__panel > center {
   margin-top: 15px;
   margin-bottom: -15px;
-  overflow: hidden!important;
+}
+
+article#tabber-tabpanel-Videos-0.tabber__panel {
+overflow: hidden!important;
 }
 ` );
 
