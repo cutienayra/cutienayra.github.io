@@ -213,3 +213,32 @@ titl-2 > shorturls > ul > li > a > a-text > p {
   margin: 0px 0px 0px 0px;
   color: white;
 }
+
+  @keyframes informationSlide {
+  from {top: -175;}
+  to {top: 50;}
+}
+
+div.menu.information {
+  width: 75%;
+  height: auto;
+  top: 50;
+  background-color: orange;
+  border-radius: 20px;
+  animation-name: informationSlide;
+  animation-duration: 2s;
+  cursor: default;
+  pointer-events: none;
+}
+
+div.menu.information > h1 {
+  font-size: 48px;
+  font-weight: normal;
+  font-family: Segoe UI Light;
+  margin: 10px 0px 5px 0px;
+}
+div.menu.information > p {
+  margin: 15px 0px 15px 0px;
+  font-weight: normal;
+  font-family: Segoe UI Bold;
+}
