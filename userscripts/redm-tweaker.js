@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      2.15
+// @version      2.2
 // @description  Making the best out of RemovedEDM // REDM :3
 // @author       Nayra*
 // @match        https://removededm.com/*
@@ -215,11 +215,17 @@ nav#p-navigation {
 .mw-parser-output .fwcp_jcd {
   margin-top: -5px!important;
   text-align: left !important;
+  width: max-content;
 }
 
 .mw-parser-output .fwcp_ctc .fwcp_ct {
 top: 72.5px!important;
 }
+
+h2.fwcp_cn {
+text-align: left;
+}
+
 ` );
 
 })();
