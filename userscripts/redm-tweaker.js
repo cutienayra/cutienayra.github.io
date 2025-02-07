@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      2.1
+// @version      2.15
 // @description  Making the best out of RemovedEDM // REDM :3
 // @author       Nayra*
 // @match        https://removededm.com/*
@@ -15,26 +15,34 @@ GM_addStyle ( `
 /* Massive list of elements hidden from RemovedEDM // REDM */
 
 h1.home-header__title > span#RemovedEDM,
-.citizen-preferences,
 a[title="Random page"],
 div.home-header>a[href="/Special:Search"],
 div.mw-cookiewarning-container
 #pt-betafeatures,
 article#tabber-tabpanel-About-0.tabber__panel > center,
-.citizen-page-header-inner > .citizen-page-heading > .firstHeading-container, .citizen-page-header-inner > .citizen-page-heading > #siteSub,
+.citizen-page-header-inner > .citizen-page-heading > .firstHeading-container, .citizen-page-header-inner > .citizen-page-heading > #siteSub {
+display:none!important;
+}
+
 img[src="/w/thumb_handler.php/d/d0/default.jpg/900px-default.jpg"],
 div#footer-sitetitle>.mw-logo-wordmark,
 #dice-a,
 #skin-client-prefs-citizen-feature-pure-black,
 #citizen-pref-header,
 #citizen-search-trigger,
-#pt-userpage-username, a[href="/Special:Notifications"][title="Your notices"],
+#pt-userpage-username, a[href="/Special:Notifications"][title="Your notices"] {
+display:none!important;
+}
+
 div#footer-sitetitle > .mw-logo-wordmark,
 a.mw-file-description[style="cursor:auto"] > img.mw-file-element,
 div.mw-content-ltr > h2.citizen-section-heading, div.mw-content-ltr > section#citizen-section-1.citizen-section,
 div.mw-content-ltr > #citizen-section-0.citizen-section > hr,
 .fwcp_cc:nth-child(2) > div:nth-child(6),
-.mw-parser-output .fwcp_fr,
+.mw-parser-output .fwcp_fr {
+display:none!important;
+}
+
 .fwcp_cc:nth-child(2) > div:nth-child(6) > span,
 .fwcp_cc:nth-child(2) > div:nth-child(6) > a,
 .fwcp_cc:nth-child(2) > div:nth-child(6) > br,
