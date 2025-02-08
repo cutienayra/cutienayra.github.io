@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      2.2
+// @version      2.5
 // @description  Making the best out of RemovedEDM // REDM :3
 // @author       Nayra*
 // @match        https://removededm.com/*
+// @match        https://www.removededm.com/*
 // @run-at       document-start
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -19,7 +20,8 @@ a[title="Random page"],
 div.home-header>a[href="/Special:Search"],
 div.mw-cookiewarning-container
 #pt-betafeatures,
-article#tabber-tabpanel-About-0.tabber__panel > center,
+article#tabber-tabpanel-About-0.tabber__panel > center:nth-child(1),
+article#tabber-tabpanel-Videos-0.tabber__panel > center:nth-child(2),
 .citizen-page-header-inner > .citizen-page-heading > .firstHeading-container, .citizen-page-header-inner > .citizen-page-heading > #siteSub {
 display:none!important;
 }
@@ -38,7 +40,6 @@ div#footer-sitetitle > .mw-logo-wordmark,
 a.mw-file-description[style="cursor:auto"] > img.mw-file-element,
 div.mw-content-ltr > h2.citizen-section-heading, div.mw-content-ltr > section#citizen-section-1.citizen-section,
 div.mw-content-ltr > #citizen-section-0.citizen-section > hr,
-.fwcp_cc:nth-child(2) > div:nth-child(6),
 .mw-parser-output .fwcp_fr {
 display:none!important;
 }
@@ -132,7 +133,7 @@ margin-top: -5px;
   margin-top: -30px;
 }
 
-td.field_‎‎[style="background-image: repeating-linear-gradient(135deg, rgb(255, 165, 0), rgb(255, 165, 0) 10px, transparent 10px, transparent 20px); background-size: 20px 20px;"] {
+td.field_‎‎[style="background-image: repeating-linear-gradient(177deg, rgb(255, 165, 0), rgb(255, 165, 0) 0px, transparent 10px, transparent 0px); background-size: 20px 20px;"] {
 background-color: rgb(255, 165, 0)!important;
 }
 td.field_‎‎[style="background-image: repeating-linear-gradient(45deg, red, red 5px, transparent 5px, transparent 10px), repeating-linear-gradient(-45deg, red, red 5px, transparent 5px, transparent 10px); background-size: 20px 20px;"] {
@@ -167,10 +168,22 @@ background-color: rgb(35, 35, 35)!important;
 }
 
 #citizen-drawer__card {
-    width: 450px;
+    width: 450px !important;
+    height: 450px !important;
+    max-height: 450px !important;
 }
 nav#p-navigation {
   margin-left: -95px;
+}
+
+nav#p-Extras {
+    position: absolute;
+    left: 9px;
+    bottom: 17.5px;
+}
+
+nav#p-Extras > div > ul > li > a {
+    width: 335.5px !important;
 }
 
 /* New Profile Page Layout (WIP) */
@@ -186,6 +199,7 @@ nav#p-navigation {
   width: 100%!important;
   background-color: transparent!important;
   border: 0px solid transparent!important;
+  padding-bottom: 50px!important;
 }
 
 .mw-parser-output .fwcp_th {
@@ -219,13 +233,22 @@ nav#p-navigation {
 }
 
 .mw-parser-output .fwcp_ctc .fwcp_ct {
-top: 72.5px!important;
+top: 77.5px!important;
 }
 
 h2.fwcp_cn {
 text-align: left;
 }
 
+article#tabber-tabpanel-About-0.tabber__panel > center:nth-child(2) {
+    margin-top: 10px;
+    padding-bottom: 12.5px;
+    border-bottom: 1px solid #21232a;
+}
+
+.tabs-tabbox > .tabs-container {
+    margin-top: 25px !important;
+}
 ` );
 
 })();
