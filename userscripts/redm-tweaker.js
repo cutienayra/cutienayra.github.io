@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      2.5
+// @version      2.75
 // @description  Making the best out of RemovedEDM // REDM :3
 // @author       Nayra*
 // @match        https://removededm.com/*
@@ -248,6 +248,13 @@ article#tabber-tabpanel-About-0.tabber__panel > center:nth-child(2) {
 
 .tabs-tabbox > .tabs-container {
     margin-top: 25px !important;
+}
+
+article[aria-labelledby="tabber-tab-About-0"] > center > span:hover {
+    background-color: rgba(255,255,255,0.125)!important;
+}
+article[aria-labelledby="tabber-tab-About-0"] > center > span:active {
+    background-color: rgba(255,255,255,0.155)!important;
 }
 ` );
 
