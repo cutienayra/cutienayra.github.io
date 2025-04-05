@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      3.01
+// @version      3.025
 // @description  Making the best out of RemovedEDM // REDM :3
 // @author       Nayra*
 // @match        https://removededm.com/*
@@ -254,9 +254,6 @@ article[aria-labelledby="tabber-tab-About-0"] > center > span:hover {
 article[aria-labelledby="tabber-tab-About-0"] > center > span:active {
     background-color: rgba(255,255,255,0.155)!important;
 }
-#tabber-0.tabber {
-margin-top: 40px;
-}
 
 /* I don't know anymore lmao */
 
@@ -305,6 +302,10 @@ div.citizen-page-heading > a.citizen-jumptotop {
     background: transparent!important;
     border: none !important;
     cursor: default !important;
+}
+
+div.fwpc {
+    margin-bottom: 50px;
 }
 ` );
 
