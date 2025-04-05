@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RemovedEDM Tweaker~
-// @version      2.75
+// @version      3.01
 // @description  Making the best out of RemovedEDM // REDM :3
 // @author       Nayra*
 // @match        https://removededm.com/*
@@ -49,17 +49,15 @@ display:none!important;
 .fwcp_cc:nth-child(2) > div:nth-child(6) > br,
 .nag-bar,
 .nag-bar--corrections,
-[aria-labelledby="tabber-tab-About-0"] > hr {
+[aria-labelledby="tabber-tab-About-0"] > hr,
+#footer-poweredbyico,
+section.citizen-footer__bottom,
+td.field_&lrm;&lrm;&lrm,
+.tabber__tab#tabber-tab-Overview-0 {
 display:none!important;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
-
-.citizen-page-heading::before {
-    content: 'Tweaked by: Nayra*';
-    font-weight: bold;
-    color: var(--color-link--active);
-}
 
 h1.home-header__title::before,
 div#footer-sitetitle.mw-wiki-title::before {
@@ -167,10 +165,10 @@ background-color: rgb(35, 35, 35)!important;
   font-size: 32px;
 }
 
-#citizen-drawer__card {
-    width: 450px !important;
-    height: 450px !important;
-    max-height: 450px !important;
+div#citizen-drawer__card {
+    width: 460px !important;
+    height: 460px !important;
+    max-height: 460px !important;
 }
 nav#p-navigation {
   margin-left: -95px;
@@ -178,8 +176,8 @@ nav#p-navigation {
 
 nav#p-Extras {
     position: absolute;
-    left: 9px;
-    bottom: 17.5px;
+    left: 14px;
+    bottom: 15.5px!important;
 }
 
 nav#p-Extras > div > ul > li > a {
@@ -255,6 +253,58 @@ article[aria-labelledby="tabber-tab-About-0"] > center > span:hover {
 }
 article[aria-labelledby="tabber-tab-About-0"] > center > span:active {
     background-color: rgba(255,255,255,0.155)!important;
+}
+#tabber-0.tabber {
+margin-top: 40px;
+}
+
+/* I don't know anymore lmao */
+
+div#newSiteSub > input {
+    height: 35px!important;
+    font-size: 16px!important;
+    border-radius: 7.5px!important;
+    padding: 5px!important;
+}
+
+div#newSiteSub > button {
+    height: auto!important;
+    font-size: 14px!important;
+    border-radius: 7.5px!important;
+    padding: 5px!important;
+    background: transparent!important;
+    border: solid 1px var(--border-color-interactive);
+}
+
+div#newSiteSub > button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.16)!important;
+}
+div#newSiteSub > button:active {
+    filter: brightness(70%);
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.22)!important;
+}
+
+li#n-Supported-channels, li#n-Contributors, li#n-RemovedEDM-Discord, li#t-specialpages, li#t-upload, li#n-recentchanges, li#n-randompage {
+    height: 35.25px!important;
+    margin-bottom: 2.5px;
+}
+li#n-randompage {
+    margin-bottom: 0px !important;
+}
+
+div.citizen-page-heading > div#newSiteSub {
+    z-index: 2;
+    position: fixed;
+    top: 12.5px;
+}
+
+div.citizen-page-heading > a.citizen-jumptotop {
+    background: transparent!important;
+    border: none !important;
+    cursor: default !important;
 }
 ` );
 
