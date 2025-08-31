@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity[dot]net Tweaker~
-// @version      v2
+// @version      v2.025
 // @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
 // @author       Nayra* aka. SoftyBnuny
 // @match        *://*.furaffinity.net/*
@@ -19,7 +19,7 @@ GM_addStyle ( `
 [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"],
 [title="Shop"], div#footer, .leaderboardAd, .sidebarAds, .lileft[tabindex="0"],
 .lileft>.top-heading[href="#"], section.gallery-section:nth-child(3),
-section.gallery-section:nth-child(4), section.gallery-section:nth-child(5), site-banner {
+section.gallery-section:nth-child(4), section.gallery-section:nth-child(5), site-banner, #c-videoAd--outer {
 display: none !important;
 }
 
