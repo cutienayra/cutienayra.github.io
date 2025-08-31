@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity[dot]net Tweaker~
-// @version      v2.0375
+// @version      2.0375
 // @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
 // @author       Nayra* aka. SoftyBnuny
 // @match        *://*.furaffinity.net/*
