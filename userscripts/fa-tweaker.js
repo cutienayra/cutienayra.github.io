@@ -5,6 +5,7 @@
 // @author       Nayra* aka. SoftyBnuny
 // @match        *://*.furaffinity.net/*
 // @run-at       document-start
+// @icon         https://www.google.com/s2/favicons?domain=furarchiver.net
 // @grant        GM_addStyle
 // ==/UserScript==
 
