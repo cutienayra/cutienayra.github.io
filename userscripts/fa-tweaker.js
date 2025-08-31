@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity[dot]net Tweaker~
-// @version      2.0375
+// @version      2.0125
 // @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
 // @author       Nayra* aka. SoftyBnuny
 // @match        *://*.furaffinity.net/*
@@ -31,7 +31,7 @@ display: none !important;
 #ddmenu {
 border-bottom: hidden !important;
 }
-news-block {
+.news-block {
 position: fixed; !important;
 }
 ` );
