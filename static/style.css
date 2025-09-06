@@ -272,7 +272,7 @@ button#mobile-bar-button:active {
         position: fixed;
         top: 0;
         left: 0;
-        width: 60%;
+        width: 70%;
         height: 100%;
         animation-name: mobile_bar;
         animation-duration: 0.5s;
