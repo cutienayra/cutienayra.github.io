@@ -105,5 +105,5 @@ document.getElementById("bar").removeAttribute("style","display: block");
 document.getElementById('mobile-bar-button').classList.remove('hide');
 });
 
-
 });
+
