@@ -99,10 +99,11 @@ document.getElementById("bar").setAttribute("style","display: block");
 document.getElementById('backdrop-menu').classList.remove('hide');
 });
 
-document.getElementById('backdrop-menu').addEventListener('click', function() {
+document.getElementById('backdrop-menu-btn').addEventListener('click', function() {
 document.getElementById('backdrop-menu').classList.add('hide');
 document.getElementById("bar").removeAttribute("style","display: block");
 document.getElementById('mobile-bar-button').classList.remove('hide');
 });
+
 
 });
