@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity[dot]net Tweaker~
-// @version      2.0125
+// @version      2.02
 // @description  Making the best out of FurAffinity (aka. Furaffinity[dot]net) :3
 // @author       Nayra* aka. SoftyBnuny
 // @match        *://*.furaffinity.net/*
@@ -18,25 +18,27 @@
 function mainCSSload() {
 GM_addStyle ( `
 [title="FA+"], [href="https://shop.furaffinity.net"][title="Shop"],
-[title="Shop"], div#footer, .leaderboardAd, .sidebarAds, .lileft[tabindex="0"],
-.lileft>.top-heading[href="#"], section.gallery-section:nth-child(3),
-section.gallery-section:nth-child(4), section.gallery-section:nth-child(5), site-banner, #c-videoAd--outer {
+[title="Shop"], div#footer, .leaderboardAd, .rectangleAd, .tallRectangleAd, .sidebarAds, .lileft[tabindex="0"],
+.lileft>.top-heading[href="#"], site-banner, #c-videoAd--outer, .userpage-section-right > .c-shoutPaginationForm:nth-child(3) {
 display: none !important;
 }
 
 #header.has-adminmessage {
-  height: 50px!important;
-  padding: 0px!important;
-  margin: 0px!important;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
 }
 #ddmenu {
-border-bottom: hidden !important;
+border-bottom: hidden;
 }
 .news-block {
-position: fixed; !important;
+position: fixed;
 }
 ` );
+consoleMsg();
+}
 
+function consoleMsg() {
 setTimeout(function(){
 console.clear();
 console.log(`♡ Thank you for using the FurAffinity[dot]net Tweaker ♡
