@@ -4,9 +4,10 @@ var viewportWidth = window.innerWidth;
 
 if ( viewportWidth > 1080 ) {
 	document.getElementById('bar').classList.remove('hide');
+	console.log('.')
 }
 else {
-	return;
+	console.log('.')
 }
 
 /* --- PAGE SHOW --- */
@@ -126,3 +127,4 @@ document.getElementById('mobile-bar-button').classList.remove('hide');
 }
 
 });
+
