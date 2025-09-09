@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+var viewportWidth = window.innerWidth;
+
+if ( viewportWidth > 1080 ) {
+	document.getElementById('bar').classList.remove('hide');
+}
+else {
+	return;
+}
+
 /* --- PAGE SHOW --- */
 
 /* Main Page Show // Button Disable */
@@ -10,6 +19,8 @@ document.getElementById('main-btn').classList.add('disabled');
 
 document.getElementById('archives-page').classList.add('hide');
 document.getElementById('archives-btn').classList.remove('disabled');
+
+mobileOpt();
 
 document.getElementById('bfdi-page').classList.add('hide');
 document.getElementById('bfdi-btn').classList.remove('disabled');
@@ -27,6 +38,8 @@ document.getElementById('main-btn').classList.remove('disabled');
 document.getElementById('archives-page').classList.remove('hide');
 document.getElementById('archives-btn').classList.add('disabled');
 
+mobileOpt();
+
 document.getElementById('bfdi-page').classList.add('hide');
 document.getElementById('bfdi-btn').classList.remove('disabled');
 
@@ -43,6 +56,8 @@ document.getElementById('main-btn').classList.remove('disabled');
 document.getElementById('archives-page').classList.add('hide');
 document.getElementById('archives-btn').classList.remove('disabled');
 
+mobileOpt();
+
 document.getElementById('bfdi-page').classList.remove('hide');
 document.getElementById('bfdi-btn').classList.add('disabled');
 
@@ -58,6 +73,8 @@ document.getElementById('main-btn').classList.remove('disabled');
 
 document.getElementById('archives-page').classList.add('hide');
 document.getElementById('archives-btn').classList.remove('disabled');
+
+mobileOpt();
 
 document.getElementById('bfdi-page').classList.add('hide');
 document.getElementById('bfdi-btn').classList.remove('disabled');
@@ -92,18 +109,20 @@ window.open('https://x.com/cutienayra_', '_blank').focus();
 
 /* -- MOBILE BAR UI ENABLE -- */
 
-
 document.getElementById('mobile-bar-button').addEventListener('click', function() {
+document.getElementById('bar').classList.remove('hide');
 document.getElementById('mobile-bar-button').classList.add('hide');
-document.getElementById("bar").setAttribute("style","display: block");
 document.getElementById('backdrop-menu').classList.remove('hide');
 });
 
 document.getElementById('backdrop-menu-btn').addEventListener('click', function() {
+mobileOpt();
+});
+
+function mobileOpt() {
 document.getElementById('backdrop-menu').classList.add('hide');
-document.getElementById("bar").removeAttribute("style","display: block");
+document.getElementById('bar').classList.add('hide');
 document.getElementById('mobile-bar-button').classList.remove('hide');
-});
+}
 
 });
-
