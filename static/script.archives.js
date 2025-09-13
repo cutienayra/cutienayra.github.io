@@ -183,7 +183,7 @@ function vlVh2qwyhqM() {
 	</ft>
 	
 	<ft>
-	<d type="img" id="maxresdefault.webp" target="_blank">8d6fwedots0.webp</d>
+	<d type="img" id="maxresdefault.webp" target="_blank">maxresdefault.webp</d>
 	<b type="disabled_" no-otherdata>` + time + `</b>
 	</ft>
 	</filetable>`;
