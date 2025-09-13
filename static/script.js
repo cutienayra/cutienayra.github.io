@@ -1,16 +1,6 @@
+// -- NAYRA MAIN SCRIPT -- //
+
 document.addEventListener('DOMContentLoaded', function() {
-
-var viewportWidth = window.innerWidth;
-
-if ( viewportWidth > 1080 ) {
-	document.getElementById('bar').classList.remove('hide');
-	console.log('.');
-}
-else {
-	console.log('.');
-}
-
-/* --- PAGE SHOW --- */
 
 /* Main Page Show // Button Disable */
 
@@ -111,7 +101,7 @@ window.open('https://x.com/cutienayra_', '_blank').focus();
 /* -- MOBILE BAR UI ENABLE -- */
 
 document.getElementById('mobile-bar-button').addEventListener('click', function() {
-document.getElementById('bar').classList.remove('hide');
+document.getElementById('bar').classList.add('show');
 document.getElementById('mobile-bar-button').classList.add('hide');
 document.getElementById('backdrop-menu').classList.remove('hide');
 });
@@ -122,10 +112,8 @@ mobileOpt();
 
 function mobileOpt() {
 document.getElementById('backdrop-menu').classList.add('hide');
-document.getElementById('bar').classList.add('hide');
+document.getElementById('bar').classList.remove('show');
 document.getElementById('mobile-bar-button').classList.remove('hide');
 }
 
 });
-
-
