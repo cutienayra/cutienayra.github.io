@@ -1,0 +1,223 @@
+/* NOTE: A wide majority of the elements within this CSS are using the 'mainpage > div#archives-page' path */
+
+/* ---- Main Body CSS ---- */
+
+mainpage > div#archives-page > h1 {
+    margin: -10px -10px -10px -10px;
+    padding: 10px;
+    font-size: 48px;
+    font-weight: normal;
+    font-family: 'Segoe UI Light';
+    color: white;
+    background: #679dff;
+}
+mainpage > div#archives-page > h1 > i {
+    margin-right: 10px;
+}
+mainpage > div#archives-page > direc,
+mainpage > div#archives-page > direc > loadingtext {
+    display: block;
+}
+
+mainpage > div#archives-page > direc > loadingtext.err {
+    margin-top: 20px;
+	font-size: 16px;
+}
+mainpage > div#archives-page > direc > loadingtext.err:before {
+    font-size: 32px;
+    content: 'Error!';
+    font-family: 'Segoe UI Bold';
+    margin: 0px 0px 10px 0px;
+	display: block;
+}
+
+@keyframes loadingtext {
+  /* Needs this just in case = animation: loadingtext 1.5s 0s ease infinite; */
+  0% {content: 'loading.';}
+  25% {content: 'loading.';}
+  50% {content: 'loading..';}
+  97.5% {content: 'loading...';}
+  100% {content: 'loading...';}
+}
+
+/* -- The actual fun bit, the actual file directory -- */
+
+mainpage > div#archives-page > direc > filetable {
+    display: flex;
+    width: auto;
+    margin: 30px auto 0px auto;
+    border: solid 2.5px rgb(0 0 0 / 15%);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+mainpage > div#archives-page > direc > filetable > ft {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+/* The file & directory element + it's icons */
+
+mainpage > div#archives-page > direc > filetable > ft > a,
+mainpage > div#archives-page > direc > filetable > ft > d {
+    text-decoration: none;
+    color: #679dff;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: solid 2.5px rgb(0 0 0 / 15%);
+    width: 400px;
+	pointer-events: all;
+	cursor: pointer;
+}
+mainpage > div#archives-page > direc > filetable > ft > d[no-otherdata=""],
+mainpage > div#archives-page > direc > filetable > ft > b[type="disabled_"][no-otherdata=""] {
+	border-right: hidden;
+}
+
+mainpage > div#archives-page > direc > filetable > ft > a:hover,
+mainpage > div#archives-page > direc > filetable > ft > d:hover {
+    color: #5885d7;
+    text-decoration: underline;
+}
+mainpage > div#archives-page > direc > filetable > ft > a:active,
+mainpage > div#archives-page > direc > filetable > ft > d:active {
+    color: #4c73bb;
+    text-decoration: underline;
+}
+
+/* -- */
+
+mainpage > div#archives-page > direc > filetable > ft > d[type="folder"],
+mainpage > div#archives-page > direc > filetable > ft > d[no-otherdata=""],
+mainpage > div#archives-page > direc > filetable > ft > a[type="vid"],
+mainpage > div#archives-page > direc > filetable > ft > d[type="vid"],
+mainpage > div#archives-page > direc > filetable > ft > a[type="json"],
+mainpage > div#archives-page > direc > filetable > ft > a[type="img"],
+mainpage > div#archives-page > direc > filetable > ft > d[type="img"] {
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-inline-start: 1.5em;
+	background-size: 18px;
+}
+
+mainpage > div#archives-page > direc > filetable > ft > d[type="folder"],
+mainpage > div#archives-page > direc > filetable > ft > d[no-otherdata=""] {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABt0lEQVR42oxStZoWQRCs2cXdHTLcHZ6EjAwnQWIkJyQlRt4Cd3d3d1n5d7q7ju1zv/q+mh6taQsk8fn29kPDRo87SDMQcNAUJgIQkBjdAoRKdXjm2mOH0AqS+PlkP8sfp0h93iu/PDji9s2FzSSJVg5ykZqWgfGRr9rAAAQiDFoB1OfyESZEB7iAI0lHwLREQBcQQKqo8p+gNUCguwCNAAUQAcFOb0NNGjT+BbUC2YsHZpWLhC6/m0chqIoM1LKbQIIBwlTQE1xAo9QDGDPYf6rkTpPc92gCUYVJAZjhyZltJ95f3zuvLYRGWWCUNkDL2333McBh4kaLlxg+aTmyL7c2xTjkN4Bt7oE3DBP/3SRz65R/bkmBRPGzcRNHYuzMjaj+fdnaFoJUEdTSXfaHbe7XNnMPyqryPcmfY+zURaAB7SHk9cXSH4fQ5rojgCAVIuqCNWgRhLYLhJB4k3iZfIPtnQiCpjAzeBIRXMA6emAqoEbQSoDdGxFUrxS1AYcpaNbBgyQBGJEOnYOeENKR/iAd1npusI4C75/c3539+nbUjOgZV5CkAU27df40lH+agUdIuA/EAgDmZnwZlhDc0wAAAABJRU5ErkJggg==");
+}
+
+mainpage > div#archives-page > direc > filetable > ft > a[type="img"],
+mainpage > div#archives-page > direc > filetable > ft > d[type="img"] {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEElEQVR42s3TTUsCYRSG4f5R0KZatWhWIW0iqYUlgVCtAmOilOiDCIOgCGoRVAiDxFuTMptKNIOIhIKGIiTxY+FKUfwDzu2sBNEXVBA88GwOPNfqnKHBGE3T6CVNQJfTHvBcW51EDvjCFsIEIwUXrxaBJ8vetUQOBGNxwmaOzxKYZfitwPM/vOXBLMJfGT4KSIFGOVNtig11CDj9Kzh3Vlk63OT0QbfLbTE5MDytMDKjMLHsYMo7z+y2B/fRLmuXNxwInbtklkK1JgdGXRuMLaiML6q4fMfMqfvs2eUzEeFcNwjFEwSjMTkw6RUo67c4tgTugIH/KsHJfZLQyw+R9xSPX2mi3xmAPhxSLxmMR6wDsucj12SMqDoAAAAASUVORK5CYII=");
+}
+
+mainpage > div#archives-page > direc > filetable > ft > a[type="vid"],
+mainpage > div#archives-page > direc > filetable > ft > d[type="vid"] {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABZElEQVR42mMAgZCQkP0grK2t/Z8YDFPPAAMwDkjSoeAwXgxSg6wHwwXOpedQcKZv5X9Nbcf/CXZx/30KDxN2wa6jc/5v2DP5f0z79v/dve3/Z7XI/L+0Wux/e7n2/zWzEgm7YML04//LZ+z9H9e45f/0aRX/W6sk/z88I/g/PUbt/8aNIYRdcCi96X9b8vL/XQbF/zPi6/+vXCz5//gevv871wj895veS9gF35bH/r+Wkfr/Rab6f88y0/8KWRb/eXk4/ytEGfxnqLEj7AICmJALMKOx0i7h/4rZmv/bFXL/V2RpEnYBIgoR2FhDD2Trf63wDsIucK+5gRX7hZeDaMIu8Gp8jIKDaq7/t0pZ8z8sby+IT9gFGw5u+T970/L/iRMv/09ov/J/RqLu/w53uf/RzvL/pxR2EnZBz8JT/5uW7P4f0rrl/4xFDf97GqT+v74n+L+8VPf/0VNeGC6gLDdSAwAAN96JQlPE7+EAAAAASUVORK5CYII=");
+}
+
+mainpage > div#archives-page > direc > filetable > ft > a[type="json"] {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR42pVTuw6CQBBcEiqFBGtteepP+NsioaJHCwqoSPgAa8Fdyea8gN4GnOQyd5fL7OzjLFAob3ciREAiwJE/e2a1LMt69P3zPKIEBVsxPzydjiChqipwHNfrui4foUW0ABIxD8MAElzXgcNh77Vtm4/H3VwAkbmua/hGEATMRVEwbzdbz5TC9LFJhJdt25BdM2D8pKAdyEiShN3+7YCINCMpAbkGMuI4BkKSBNiBFFnvEV+GFFbWIIoiwAUHUuQFBytrEIah0YGurO/7psjzs6GNWrVpmmUH8hxwm0wdmN4ZBfgyvaScCiFxoVDz7FvPBukNGQvqoaqBtTAAAAAASUVORK5CYII=");
+}
+
+/* ----- INSANELY IMPORTANT - DO NOT REMOVE THIS CODE BELOW ----- */
+
+mainpage > div#archives-page > direc > filetable > ft > a,
+mainpage > div#archives-page > direc > filetable > ft > b,
+mainpage > div#archives-page > direc > filetable > ft > c,
+mainpage > div#archives-page > direc > filetable > ft > d {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ----- The top non-functional buttons incl. the date and Video ID elements ----- */
+
+mainpage > div#archives-page > direc > filetable > ft > d[type="disabled_"],
+mainpage > div#archives-page > direc > filetable > ft > b[type="disabled_"],
+mainpage > div#archives-page > direc > filetable > ft > c[type="disabled_"],
+mainpage > div#archives-page > direc > filetable > ft > b,
+mainpage > div#archives-page > direc > filetable > ft > c {
+    color: black;
+    cursor: default;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+
+mainpage > div#archives-page > direc > filetable > ft > b[type="disabled_"] {
+    padding-right: 5px;
+    border-right: solid 2.5px rgb(0 0 0 / 15%);
+    margin-right: 5px;
+    width: 100px;
+}
+
+mainpage > div#archives-page > direc > filetable > ft > b[type="disabled_"][disabled=""],
+mainpage > div#archives-page > direc > filetable > ft > c[type="disabled_"][disabled=""],
+mainpage > div#archives-page > direc > filetable > ft > d[type="disabled_"][disabled=""] {
+    font-family: 'Segoe UI Bold';
+	text-decoration: none;
+}
+
+/* ----- VIDEO PLAYER (REALLY IMPORTANT) ----- */
+
+player {
+    display: flex !important;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    backdrop-filter: brightness(0.25);
+    opacity: 100;
+    visibility: visible;
+    z-index: 5;
+    transition: opacity, visibility 0.25s linear;
+    justify-content: center;
+}
+player.hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+player > video,
+player > img {
+    height: 100%;
+    pointer-events: all;
+    user-select: all;
+    position: fixed;
+    z-index: 6;
+}
+
+player > button[type="exit-player"] {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    left: 0;
+    padding: 0;
+    font-size: 18px;
+    background: transparent;
+    border: hidden;
+    color: white;
+    cursor: auto;
+    pointer-events: all;
+    user-select: all;
+    justify-content: flex-end;
+    z-index: 5;
+}
+
+/* FOR MOBILE LAYOUT */
+
+@media screen and (max-width: 1080px) {
+	player > video,
+	player > img {
+		width: 100%;
+		height: fit-content !important;
+		position: relative;
+		display: flex;
+		align-self: center;
+	}
+	mainpage > div#archives-page > direc > filetable > ft:nth-child(1) {
+		display: none;
+	}
+}
