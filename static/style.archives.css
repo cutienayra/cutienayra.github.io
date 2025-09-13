@@ -212,7 +212,7 @@ player > button[type="exit-player"] {
 	player > video,
 	player > img {
 		width: 100%;
-		height: fit-content !important;
+		height: auto !important;
 		position: relative;
 		display: flex;
 		align-self: center;
