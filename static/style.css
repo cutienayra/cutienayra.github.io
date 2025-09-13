@@ -25,8 +25,8 @@ html, body {
 }
 
 b, bold, strong {
-    font-family: "Segoe UI Bold"!important;
-    font-weight: normal!important;
+    font-family: "Segoe UI Bold";
+    font-weight: normal;
 }
 
 .hide {
@@ -46,9 +46,9 @@ bar > div.btns > button {
 /* ---- Left Bar CSS ---- */
 
 bar {
-    height: auto;
     width: 27.5%;
-    display: block;
+	height: 100%;
+    display: block!important;
     background: black;
     padding: 10px;
     box-shadow: 0 0 16px rgb(0 0 0 / 50%);
@@ -132,7 +132,6 @@ bar > div.btns > button#bfdi-btn > i {
 
 /* - - */
 
-
 bar > div.btns > button#friendos-btn {
     background: #5ad755;
     color: white;
@@ -190,7 +189,7 @@ mainpage > div {
     border: solid 2.5px rgb(0 0 0 / 15%);
     height: 100%;
     padding: 10px;
-	overflow: auto hidden;
+	overflow: hidden auto;
 }
 
 /* Custom Page Designs - Main Page CSS */
@@ -240,6 +239,8 @@ mainpage > div#main-page > center > img-custom > img {
     margin-top: -115;
 }
 
+/* -- For the main CSS, go to style.archives.css -- */
+
 /* ----- .|. MOBILE UI .|. ----- */
 
 /* -- MOBILE BAR BUTTON -- */
@@ -247,32 +248,31 @@ mainpage > div#main-page > center > img-custom > img {
 button#mobile-bar-button {
     z-index: 500;
     position: fixed;
-    bottom: 25;
-    left: 25;
-    font-size: 32px;
+    bottom: 0;
+    left: 0;
+    font-size: 48px;
     margin: 0;
-    padding: 5px 3px 5px 3px;
+    padding: 10px 8px 10px 7px;
     background-color: #c4d5f1;
     border: hidden;
-    border-radius: 5px;
+    border-top-right-radius: 30px;
     color: white;
     display: none;
-	pointer-events: all;
-	user-select: none;
-	box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 25%);
+    pointer-events: all;
+    user-select: none;
+    box-shadow: 0px 0px 20px 20px rgb(196 213 241 / 100%);
 }
 button#mobile-bar-button:active {
-    filter: brightness(95%);
+    filter: brightness(85%);
 }
 
 @media screen and (max-width: 1080px) {
 	bar {
-        z-index: 2;
+        z-index: 3;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 70%;
-        height: 100%;
+        left: -500;
+        width: 70% !important;
 		transition: left 0.35s ease;
     }
 	mainpage > div#main-page > center > img-custom {
@@ -289,7 +289,15 @@ button#mobile-bar-button:active {
 		width: 500px;
 	}
 	button#mobile-bar-button {
-		display: block;
+		display: block !important;
+		visibility: visible;
+		opacity: 75%;
+		transition: all 0.35s ease;
+		z-index: 1;
+	}
+	button#mobile-bar-button.hide {
+		visibility: hidden;
+		opacity: 0%;
 	}
 	div#backdrop-menu {
 		width: 100%;
@@ -297,27 +305,25 @@ button#mobile-bar-button:active {
 		background-color: rgb(0 0 0 / 25%);
 		z-index: 1;
 		position: fixed;
-		display: block;
+		display: block!important;
 		visibility: visible;
 		opacity: 100;
-		transition: visibility, opacity 0.125s linear;
+		transition: all 0.125s linear;
 	}
 	div#backdrop-menu-btn {
 		width: 26.75%;
 		right: 0;
 		height: 100%;
 		background-color: transparent;
-		z-index: 1;
+		z-index: 2;
 		position: fixed;
 		pointer-events: auto;
 	}
 	div#backdrop-menu.hide {
 	visibility: hidden;
 	opacity: 0;
-	display: block!important;
 	}
-	bar#bar.hide {
-	display: block!important;
-	left: -500;
+	bar.show {
+	left: 0;
 	}
 }
