@@ -18,7 +18,8 @@ html, body {
     font-family: var(--web-font);
     cursor: default;
     width: 100%;
-    overflow-x: hidden;
+	height: 100%;
+    overflow: hidden;
     margin: 0px;
     display: flex;
     flex-direction: row;
