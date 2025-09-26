@@ -11,7 +11,7 @@
 
 MAKE SURE TO PASTE THE FOLLOWING BELOW INTO THE CONSOLE, FREELY CHANGE ANY OF THE TEXT WITH "(none)", AS IT'S A PLACEHOLDER.
 
-::root {
+:root {
 --bg-image: url('(none)');
 --bg-brightness: (none);
 --bg-blur: (none);
@@ -22,7 +22,7 @@ MAKE SURE TO PASTE THE FOLLOWING BELOW INTO THE CONSOLE, FREELY CHANGE ANY OF TH
 
 NOTES:
 bg-image - Allows you to change a background from, either from a URL or a data:image link.
-bg-brightness - Allows you to change the brightness of the background.
+bg-brightness - Allows you to change the brightness of the background. (RECOMMENDED TO SET IT TO 75% OR LOWER)
 bg-blur - Allows you to change the blurring of the background.
 bg-position - Allows you to adjust the position of the background.
 bg-size - Allows you to adjust the size of the image (e.g. contain, cover or by different measurements (%, px or ov).
