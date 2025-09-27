@@ -46,48 +46,48 @@ font-size: 0px;
 color: transparent;
 }
 
-main.chatContent_f75fb0,
-.chat_f75fb0,
-.app__160d8,
-.appMount__51fd7,
-.textContainer__0d0f9,
-.contentContainer__0d0f9,
-.members_c8ffbb,
-.container__0f2e8,
-.member_c8ffbb,
-.popout_af3b89,
+main.chatContent_f75fb0, /* Channel Chat BG */
+.chat_f75fb0, /* Chat BG - MAIN */
+.appMount__51fd7, /* Main Discord BG -- A */
+.bg__960e4, /* Main Discord BG -- B */
+.app__160d8, /* Main Discord BG -- C */
+.members_c8ffbb, /* Server User List // Right-side bar */
+.container__0f2e8, /* Activity BTNs */
+.member_c8ffbb, /* Server // User list BG */
+.popout_af3b89, /* Server Last Played */
+
+/* FRIENDS LIST ELEMENTS */
 .container__133bf, /* Main Friend List BG */
 .privateChannels__35e86, /* Friend List A */
+.scroller__99e7c, /* Friend List B */
 .searchBar__35e86, /* Friend List - Searchbar */
+.container__7d20c, /* Active Now Section - Friend List */
+.container__9293f, /* Top Bar - Friend List */
+
+/* SETTINGS MENU */
 .sidebarRegionScroller__23e6b, /* Sidebar - Settings Menu */
 .contentRegion__23e6b, /* Settings Menu */
 .contentRegionScroller__23e6b, /* Settings Menu */
-.container__7d20c, /* Active Now Section - Friend List */
-.bg__960e4, /* Discord BG */
+
+/* Other stuff */
 .wrapper_ef3116, /* Server List */
-.scroller__99e7c, /* Friend List B */
-.container__9293f, /* Top Bar - Friend List */
-.themedBackground__74017 /* Message Text BG - ALT */ {
+.themedBackground__74017, /* Message Text BG - ALT */ {
 background: transparent !important;
 border: hidden !important;
 }
 
-.container__2637a,
-.panels_c48ade,
-.progressContainer__0d0f9,
-.container_c8ffbb,
-.title_f75fb0,
-.embedFull__623de,
-.popoutContentWrapper_af3b89,
-.interactionsContainer_af3b89,
-.tabBody__133bf,
-.addFriendInputWrapper__72ba7,
-.container_a14595,
-.wrapper__44df5,
-.inner_c0bea0,
-.menus_ce8328 > .overlay_c0bea0,
-.nowPlayingColumn__133bf,
-.emptyCard__7e549,
+.container__2637a, /* Server Channel List BG */
+.panels_c48ade, /* User Bar - MAIN */
+.container_c8ffbb, /* Server / DM BG */
+.title_f75fb0, /* Server / DM Top Bar BG */
+.embedFull__623de, /* Embed BG */
+.popoutContentWrapper_af3b89, /* Activity BG - A */
+.interactionsContainer_af3b89, /* Activity BG - B */
+.tabBody__133bf, /* Add Friend BG */
+.addFriendInputWrapper__72ba7, /* Add Friend Input Button */
+.container_a14595, /* Discover Discoverable Servers BTN BG */
+.nowPlayingColumn__133bf, /* Now Playing Column */
+.emptyCard__7e549, /* Empty Card - Now Playing Column */
 .channelTextArea_f75fb0 /* Message Text BG - MAIN */ {
   background: transparent;
   background-color: rgb(0 0 0 / 35%) !important;
@@ -119,7 +119,7 @@ border: hidden !important;
 }
 
 .wrapper_d852db, /* Chat message loader */
-.sidebar_c48ade:after, /* Useless */ {
+.sidebar_c48ade:after /* Useless Line on the bottom of the server channel/friends list */ {
 	display: none !important;
 }
 
