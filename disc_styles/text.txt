@@ -1,0 +1,22 @@
+TO APPLY THE CSS TWEAK, YOU NEED TO GO INTO THE "Vencord QuickCSS Editor", within settings and under the "Vencord tab
+
+MAKE SURE TO PASTE THE FOLLOWING BELOW INTO THE CONSOLE, FREELY CHANGE ANY OF THE TEXT WITH "(none)", AS IT'S A PLACEHOLDER.
+
+:root {
+--bg-image: '(none)';
+--bg-brightness: (none);
+--bg-blur: (none);
+--bg-position: (none);
+--bg-size: (none);
+--bg-repeat: (none);
+--transparency: (none);
+}
+
+EXAMPLES:
+bg-image - Allows you to change a background from, either from a URL or a data:image link.
+bg-brightness - Allows you to change the brightness of the background. (RECOMMENDED TO SET IT TO 70% OR LOWER)
+bg-blur - Allows you to change the blurring of the background.
+bg-position - Allows you to adjust the position of the background.
+bg-size - Allows you to adjust the size of the image (e.g. contain, cover or by different measurements (%, px or ov).
+bg-repeat - Allows you to adjust if you want the background to repeat. (Important to set the size and position up if you want this.)
+transparency - Allows you to set the transparency of the elements within Discord.
