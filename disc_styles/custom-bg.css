@@ -125,5 +125,5 @@ border: hidden !important;
 .circleIconButton__5bc7e, /* Non-server and DM Buttons */
 .childWrapperNoHoverBg__6e9f8, /* Discord Main Button */
 .folderGroupBackground__48112 /* Folder BG */ {
-background: rgb(255 255 255 / 0.25);
+background: rgb(255 255 255 / 0.25) !important;
 }
