@@ -118,11 +118,12 @@ border: hidden !important;
 }
 
 .wrapper_d852db, /* Chat message loader */
-.sidebar_c48ade:after /* Useless */ {
+.sidebar_c48ade:after, /* Useless */ {
 	display: none;
 }
 
 .circleIconButton__5bc7e, /* Non-server and DM Buttons */
-.childWrapperNoHoverBg__6e9f8 /* Discord Main Button */ {
-background: rgb(255 255 255 / 0.25) !important;
+.childWrapperNoHoverBg__6e9f8, /* Discord Main Button */
+.folderGroupBackground__48112 /* Folder BG */ {
+background: rgb(255 255 255 / 0.25);
 }
