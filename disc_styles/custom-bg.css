@@ -66,7 +66,8 @@ main.chatContent_f75fb0,
 .bg__960e4, /* Discord BG */
 .wrapper_ef3116, /* Server List */
 .scroller__99e7c, /* Friend List B */
-.container__9293f /* Top Bar - Friend List */ {
+.container__9293f, /* Top Bar - Friend List */
+.themedBackground__74017 /* Message Text BG - ALT */ {
 background: transparent !important;
 border: hidden !important;
 }
@@ -86,7 +87,8 @@ border: hidden !important;
 .inner_c0bea0,
 .menus_ce8328 > .overlay_c0bea0,
 .nowPlayingColumn__133bf,
-.emptyCard__7e549 {
+.emptyCard__7e549,
+.channelTextArea_f75fb0 /* Message Text BG - MAIN */ {
   background: transparent;
   background-color: rgb(0 0 0 / 35%) !important;
   border: hidden !important;
@@ -115,6 +117,12 @@ border: hidden !important;
   margin-bottom: 0px !important;
 }
 
-.wrapper_d852db /* Chat message loader */ {
+.wrapper_d852db, /* Chat message loader */
+.sidebar_c48ade:after /* Useless */ {
 	display: none;
+}
+
+.circleIconButton__5bc7e, /* Non-server and DM Buttons */
+.childWrapperNoHoverBg__6e9f8 /* Discord Main Button */ {
+background: rgb(255 255 255 / 0.25) !important;
 }
