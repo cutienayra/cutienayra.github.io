@@ -10,7 +10,7 @@
 /* CUSTOM BACKGROUND CSS -- MADE BY: NAYRA* */
 
 body:before, body:has(#app-mount)::before {
-background: var(--bg-position)/var(--bg-size) var(--bg-repeat) url(var(--bg-image));
+background: var(--bg-position)/var(--bg-size) var(--bg-repeat) var(--bg-image);
 filter: brightness(var(--bg-brightness)) blur(var(--bg-blur))!important;
 width: 100%;
 height: 100%;
