@@ -3,7 +3,7 @@ TO APPLY THE CSS TWEAK, YOU NEED TO GO INTO THE "Vencord QuickCSS Editor", withi
 MAKE SURE TO PASTE THE FOLLOWING BELOW INTO THE CONSOLE, FREELY CHANGE ANY OF THE TEXT WITH "(none)", AS IT'S A PLACEHOLDER.
 
 :root {
---bg-image: '(none)';
+--bg-image: url('(none)');
 --bg-brightness: (none);
 --bg-blur: (none);
 --bg-position: (none);
@@ -12,8 +12,10 @@ MAKE SURE TO PASTE THE FOLLOWING BELOW INTO THE CONSOLE, FREELY CHANGE ANY OF TH
 --transparency: (none);
 }
 
-EXAMPLES:
+DOCUMENTATION:
 bg-image - Allows you to change a background from, either from a URL or a data:image link.
+Example: url('data:image'); or url('https://example.org/exmaple.jpg');
+
 bg-brightness - Allows you to change the brightness of the background. (RECOMMENDED TO SET IT TO 70% OR LOWER)
 bg-blur - Allows you to change the blurring of the background.
 bg-position - Allows you to adjust the position of the background.
