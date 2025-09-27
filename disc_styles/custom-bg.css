@@ -55,7 +55,6 @@ main.chatContent_f75fb0, /* Channel Chat BG */
 .container__0f2e8, /* Activity BTNs */
 .member_c8ffbb, /* Server // User list BG */
 .popout_af3b89, /* Server Last Played */
-
 /* FRIENDS LIST ELEMENTS */
 .container__133bf, /* Main Friend List BG */
 .privateChannels__35e86, /* Friend List A */
@@ -63,12 +62,10 @@ main.chatContent_f75fb0, /* Channel Chat BG */
 .searchBar__35e86, /* Friend List - Searchbar */
 .container__7d20c, /* Active Now Section - Friend List */
 .container__9293f, /* Top Bar - Friend List */
-
 /* SETTINGS MENU */
 .sidebarRegionScroller__23e6b, /* Sidebar - Settings Menu */
 .contentRegion__23e6b, /* Settings Menu */
 .contentRegionScroller__23e6b, /* Settings Menu */
-
 /* Other stuff */
 .wrapper_ef3116, /* Server List */
 .themedBackground__74017, /* Message Text BG - ALT */ {
