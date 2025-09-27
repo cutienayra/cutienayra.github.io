@@ -1,34 +1,11 @@
 /**
  * @name Discord BG Applyer
  * @author Nayra*
- * @version 1.0.1
+ * @version 1.5
  * @description A fully customised Discord CSS theme for Vencord, that allows you to freely customise Discord to have any background you desire.
  * @source https://github.com/cutienayra
  * @youtube https://youtube.com/@cutienayra
  */
-
-/* TO APPLY THE CSS TWEAK, YOU NEED TO GO INTO THE "Vencord QuickCSS Editor", within settings and under the "Vencord tab
-
-MAKE SURE TO PASTE THE FOLLOWING BELOW INTO THE CONSOLE, FREELY CHANGE ANY OF THE TEXT WITH "(none)", AS IT'S A PLACEHOLDER.
-
-:root {
---bg-image: url('(none)');
---bg-brightness: (none);
---bg-blur: (none);
---bg-position: (none);
---bg-size: (none);
---bg-repeat: (none);
-}
-
-NOTES:
-bg-image - Allows you to change a background from, either from a URL or a data:image link.
-bg-brightness - Allows you to change the brightness of the background. (RECOMMENDED TO SET IT TO 75% OR LOWER)
-bg-blur - Allows you to change the blurring of the background.
-bg-position - Allows you to adjust the position of the background.
-bg-size - Allows you to adjust the size of the image (e.g. contain, cover or by different measurements (%, px or ov).
-bg-repeat - Allows you to adjust if you want the background to repeat. (Important to set the size and position up if you want this.)
-
-*/
 
 /* CUSTOM BACKGROUND CSS -- MADE BY: NAYRA* */
 
@@ -88,7 +65,7 @@ border: hidden !important;
 .channelTextArea_f75fb0, /* Message Text BG - MAIN */
 .panel__5dec7 /* Now Playing - FOR MAIN USER ONLY */ {
   background: transparent;
-  background-color: rgb(0 0 0 / 35%) !important;
+  background-color: rgb(0 0 0 / var(--transparency)) !important;
   border: hidden !important;
 }
 
@@ -100,7 +77,6 @@ border: hidden !important;
 
 .popoutContentWrapper_af3b89,
 .interactionsContainer_af3b89,
-.menu_c1e9c4,
 .container_a2f514 /* Discord Loading BG */ {
   background: rgb(0 0 0 / 50%) !important;
   border: hidden !important;
