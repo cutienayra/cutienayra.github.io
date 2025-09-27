@@ -102,7 +102,8 @@ border: hidden !important;
 
 .popoutContentWrapper_af3b89,
 .interactionsContainer_af3b89,
-.menu_c1e9c4 {
+.menu_c1e9c4,
+.container_a2f514 /* Discord Loading BG */ {
   background: rgb(0 0 0 / 50%) !important;
   border: hidden !important;
 }
@@ -119,7 +120,7 @@ border: hidden !important;
 
 .wrapper_d852db, /* Chat message loader */
 .sidebar_c48ade:after, /* Useless */ {
-	display: none;
+	display: none !important;
 }
 
 .circleIconButton__5bc7e, /* Non-server and DM Buttons */
