@@ -68,7 +68,7 @@ main.chatContent_f75fb0, /* Channel Chat BG */
 .contentRegionScroller__23e6b, /* Settings Menu */
 /* Other stuff */
 .wrapper_ef3116, /* Server List */
-.themedBackground__74017, /* Message Text BG - ALT */ {
+.themedBackground__74017 /* Message Text BG - ALT */ {
 background: transparent !important;
 border: hidden !important;
 }
@@ -85,7 +85,8 @@ border: hidden !important;
 .container_a14595, /* Discover Discoverable Servers BTN BG */
 .nowPlayingColumn__133bf, /* Now Playing Column */
 .emptyCard__7e549, /* Empty Card - Now Playing Column */
-.channelTextArea_f75fb0 /* Message Text BG - MAIN */ {
+.channelTextArea_f75fb0, /* Message Text BG - MAIN */
+.panel__5dec7 /* Now Playing - FOR MAIN USER ONLY */ {
   background: transparent;
   background-color: rgb(0 0 0 / 35%) !important;
   border: hidden !important;
