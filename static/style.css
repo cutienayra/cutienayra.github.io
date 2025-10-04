@@ -163,6 +163,12 @@ bar > div.btns > button#pin-btn > i {
     color: red;
 }
 
+bar > div.btns > button#bsky-btn > i {
+    color: #3f4cff;
+    font-size: 40px;
+    margin: 0px 2px 0px 2px!important;
+}
+
 bar > div.btns.social-btns > button > i {
     margin: 0 !important;
     color: white;
