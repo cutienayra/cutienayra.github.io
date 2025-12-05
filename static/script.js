@@ -105,12 +105,6 @@ document.getElementById('x-btn').addEventListener('click', function() {
 window.open('https://x.com/cutienayra_', '_blank').focus();
 });
 
-/* - */
-
-document.getElementById('bsky-btn').addEventListener('click', function() {
-window.open('https://bsky.app/profile/cutienayra.bsky.social', '_blank').focus();
-});
-
 /* -- MOBILE BAR UI ENABLE -- */
 
 document.getElementById('mobile-bar-button').addEventListener('click', function() {
@@ -130,6 +124,7 @@ document.getElementById('mobile-bar-button').classList.remove('hide');
 }
 
 });
+
 
 
 
