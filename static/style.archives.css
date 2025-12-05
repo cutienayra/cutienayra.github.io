@@ -80,6 +80,7 @@ mainpage > div#archives-page > archivebox > gridbx > a[type="item"] {
     pointer-events: all;
     cursor: pointer;
     transition: all 0.15s ease;
+	height: auto;
 }
 
 mainpage > div#archives-page > archivebox > gridbx > a[type="item"]:hover {
