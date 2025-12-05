@@ -317,11 +317,3 @@ button#mobile-bar-button:active {
     height: 97%;
 }
 }
-
-/* -- To stop the CSS from breaking */
-
-@media screen and (min-width: 385px) and (max-width: 1080px) {
-	html, body, bar, mainpage {
-		display: none !important;
-	}
-}
