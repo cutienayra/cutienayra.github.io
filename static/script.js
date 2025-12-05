@@ -3,9 +3,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 console.clear();
-console.error('WARNING!');
-console.log('My website is currently under construction, so assets and functions will not work as expected.');
-console.log('If there is any problems you come across on my site, please let me know immediately @ Discord at cutienayra_');
+console.log(`WARNING!!
+
+My website is currently under construction, so assets and functions will not work as expected.
+If there is any problems you come across on my site, please let me know immediately @ Discord at cutienayra_
+Thank you ^^`);
 
 /* Main Page Show // Button Disable */
 
@@ -128,5 +130,6 @@ document.getElementById('mobile-bar-button').classList.remove('hide');
 }
 
 });
+
 
 
