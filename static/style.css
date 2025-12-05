@@ -18,8 +18,7 @@ html, body {
     font-family: var(--web-font);
     cursor: default;
     width: 100%;
-	height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0px;
     display: flex;
     flex-direction: row;
@@ -32,12 +31,6 @@ b, bold, strong {
 
 .hide {
 display: none !important;
-}
-
-.disabled {
-    filter: brightness(75%)!important;
-    cursor: not-allowed!important;
-    pointer-events: none!important;
 }
 
 bar > div.btns > button {
@@ -68,27 +61,35 @@ bar > logo {
 
 /* Buttons - Left Bar CSS */
 
-bar > div.btns {
-    margin: 10px;
+bar > div.btns.social-btns {
+    margin-top: 15px;
 }
 
 bar > div.btns > button {
     width: 100%;
     border: hidden;
-    background: white;
-    border-radius: 5px;
+    border-bottom: solid 2.5px rgb(255 255 255 / 50%);
+    background: transparent;
     font-family: 'Segoe UI Bold';
+    text-transform: capitalize;
     font-size: 24px;
-    padding: 10px;
+    padding: 7.5px;
     cursor: pointer;
-    margin-bottom: 7.5px;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 bar > div.btns > button:hover {
-    filter: brightness(96.5%);
+    filter: brightness(80%);
+	border-bottom: solid 2.5px rgb(255 255 255 / 62.5%);
 }
-bar > div.btns > button:active {
-    filter: brightness(91%);
+
+bar > div.btns > button.disabled {
+    filter: brightness(80%);
+	border-bottom: solid 2.5px rgb(255 255 255 / 62.5%);
+    cursor: not-allowed!important;
 }
 
 /* Button Icon - Left Bar CSS */
@@ -99,47 +100,26 @@ bar > div.btns > button > i {
 
 /* Custom Button Designs - Left Bar CSS */
 
-bar > div.btns > button#main-btn {
-    background: #0083ff;
-    color: white;
-}
+/* Homepage BTN */
+bar > div.btns > button#main-btn,
+bar > div.btns > button#main-btn > i,
 
-bar > div.btns > button#main-btn > i {
-    color: white;
-}
+/* Archives BTN */
+bar > div.btns > button#archives-btn,
+bar > div.btns > button#main-btn > i,
 
-/* - - */
+/* BFDI BTN */
+bar > div.btns > button#bfdi-btn,
+bar > div.btns > button#bfdi-btn > i,
 
-bar > div.btns > button#archives-btn {
-    background: #e37fff;
-    color: white;
-}
-
-bar > div.btns > button#main-btn > i {
-    color: white;
-}
-
-/* - - */
-
-
-bar > div.btns > button#bfdi-btn {
-    background: #ff6464;
-    color: white;
-}
-
-bar > div.btns > button#bfdi-btn > i {
-    color: white;
-}
-
-/* - - */
-
-bar > div.btns > button#friendos-btn {
-    background: #5ad755;
-    color: white;
-}
-
+/* Friendos BTN */
+bar > div.btns > button#friendos-btn,
 bar > div.btns > button#friendos-btn > i {
     color: white;
+}
+
+bar > div.btns > button#friendos-btn {
+	border-bottom: hidden;
 }
 
 /* -- SOCIAL MEDIA BUTTONS -- */
@@ -156,17 +136,13 @@ bar > div.btns.social-btns > button {
     font-size: 44px;
     margin: 0;
     border-radius: 0;
+    border: hidden;
+    cursor: pointer;
 }
 
 bar > div.btns > button#yt-btn > i,
 bar > div.btns > button#pin-btn > i {
     color: red;
-}
-
-bar > div.btns > button#bsky-btn > i {
-    color: #3f4cff;
-    font-size: 40px;
-    margin: 0px 2px 0px 2px!important;
 }
 
 bar > div.btns.social-btns > button > i {
@@ -259,7 +235,7 @@ button#mobile-bar-button {
     left: 0;
     font-size: 48px;
     margin: 0;
-    padding: 10px 8px 10px 7px;
+    padding: 8px 6px 8px 5px;
     background-color: #c4d5f1;
     border: hidden;
     border-top-right-radius: 30px;
@@ -330,7 +306,22 @@ button#mobile-bar-button:active {
 	visibility: hidden;
 	opacity: 0;
 	}
+	
 	bar.show {
 	left: 0;
+	}
+	
+	mainpage > div#main-page, mainpage > div#bfdi-page, mainpage > div#friendos-page {
+    margin: 10px 10px 0px 10px;
+    overflow: hidden;
+    height: 97%;
+}
+}
+
+/* -- To stop the CSS from breaking */
+
+@media screen and (min-width: 385px) and (max-width: 1080px) {
+	html, body, bar, mainpage {
+		display: none !important;
 	}
 }
