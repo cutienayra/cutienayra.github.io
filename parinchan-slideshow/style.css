@@ -1,0 +1,145 @@
+@import url("https://transfer.archivete.am/12GDuV/segoe_fontz.css");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+	background: black;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+/* -- MAIN BIT -- */
+	
+slideshow {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+slideshow > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+slideshow > div > div#slidesContainer {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+	transition: transform cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+}
+
+slideshow > button {
+    position: absolute;
+    z-index: 100;
+    top: 42.5%;
+    background: rgb(255 255 255 / 50%);
+    padding: 25px;
+    border-radius: 50px;
+	border: hidden;
+	cursor: pointer;
+	display: none;
+}
+slideshow > button:hover,
+slideshow > button:active {
+	filter: brightness(90%);
+}
+
+slideshow > button#nextBtn {
+    right: -35px;
+    padding-right: 40px;
+}
+slideshow > button#prevBtn {
+    left: -35px;
+    padding-left: 40px;
+}
+
+slideshow > div > div#slideLabel {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(255 255 255 / 50%);
+    align-items: center;
+}
+
+slideshow > div > div#slideLabel > h3,
+slideshow > div > div#slideLabel > p,
+slideshow > div > div#slideLabel > a {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	pointer-events: none;
+	user-select: none;
+}
+
+slideshow > div > div#slideLabel > h3 {
+	font-size: 22.5px;
+	font-family: 'Segoe UI Light';
+}
+
+slideshow > div > div#slideLabel > p {
+	font-size: 15px;
+	margin: 10px 0px 10px 0px;
+	font-family: 'Segoe UI';
+}
+slideshow > div > div#slideLabel > p > b {
+	font-family: 'Segoe UI Bold';
+	font-weight: normal;
+}
+
+slideshow > div > div#slideLabel > a {
+	background: rgb(0 160 15);
+	text-decoration: none;
+	padding: 7.5px;
+	color: white;
+	font-family: 'Segoe UI Bold';
+	font-weight: normal;
+	font-size: 15px;
+	border: hidden;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	pointer-events: all;
+}
+slideshow > div > div#slideLabel > a:hover {
+	filter: brightness(90%);
+}
+slideshow > div > div#slideLabel > a > svg {
+	margin-right: 5px;
+}
+slideshow > div > div#slidesContainer > div.slide {
+    background: center / cover no-repeat;
+    height: 100%;
+    min-width: 100%;
+}
+
+/* Animation for slide transition */
+.slide-transition {
+    transition: transform 0.5s ease-in-out;
+}
